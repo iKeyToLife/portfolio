@@ -143,6 +143,6 @@ header li:hover h2 {
   opacity: 1;
 }
 
-#img-box-current {
+#icon-box-current {
   background-color: var(--yellow);
 }
