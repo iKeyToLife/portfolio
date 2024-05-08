@@ -146,3 +146,58 @@ header li:hover h2 {
 #icon-box-current {
   background-color: var(--yellow);
 }
+
+.content-home {
+  position: absolute;
+  left: 100px;
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+}
+
+.content-home article {
+  width: 60%;
+  max-width: 300px;
+  margin-right: 20px;
+}
+
+.content-home img {
+  width: 90%;
+  height: auto;
+  border: 2px solid var(--yellow);
+  border-radius: 5%;
+  transition: width 0.7s ease;
+}
+
+.content-home img:hover {
+  width: 100%;
+  height: auto;
+  border: 3px solid var(--yellow);
+}
+
+.content-home div {
+  position: relative;
+  display: flex;
+  margin-left: 200px;
+  flex-direction: column;
+}
+
+.text-uppercase h1 {
+  text-transform: uppercase;
+  color: var(--yellow);
+  margin: 0;
+}
+
+h1 {
+  font-size: 42px;
+  line-height: 52px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.text-uppercase h1 span {
+  text-transform: uppercase;
+  color: var(--white);
+  margin: 0;
+}
