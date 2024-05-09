@@ -36,7 +36,6 @@ body {
   max-height: 100vh;
   display: flex;
   overflow-x: hidden;
-  justify-content: flex-end;
   align-items: center;
   height: 100vh;
   margin: 0;
@@ -47,7 +46,7 @@ body {
 /* Header style */
 .header {
   display: flex;
-  position: relative;
+  position: fixed;
   height: 400px;
   width: 150px;
   right: 50px;
@@ -56,6 +55,7 @@ body {
   flex-direction: column;
   padding: 1%;
   background-color: transparent;
+  z-index: 1;
 }
 
 .nav-list {
@@ -147,21 +147,29 @@ header li:hover h2 {
 
 /* Style for index.html Home */
 .content-home {
-  position: absolute;
-  left: 100px;
+  position: relative;
+  margin-right: 200px;
+  left: 50px;
+  padding: 1%;
   display: flex;
   justify-content: start;
   align-items: flex-start;
 }
 
 .content-home article {
-  width: 60%;
+  width: 40%;
   max-width: 300px;
   margin-right: 20px;
 }
 
+.content-home article img {
+  max-width: 200%;
+  height: auto;
+}
+
+
 .content-home img {
-  width: 90%;
+  width: 100%;
   height: auto;
   border: 2px solid var(--yellow);
   border-radius: 5%;
@@ -169,7 +177,7 @@ header li:hover h2 {
 }
 
 .content-home img:hover {
-  width: 100%;
+  width: 130%;
   height: auto;
   border: 3px solid var(--yellow);
 }
@@ -178,8 +186,9 @@ header li:hover h2 {
   width: 500px;
   position: relative;
   display: flex;
-  margin-left: 200px;
+  margin-left: 50px;
   flex-direction: column;
+  align-items: center;
 }
 
 /* Style text for uppercase */
@@ -207,14 +216,15 @@ h1 {
   line-height: 1.7;
   color: var(--white);
   margin-top: 50px;
-  margin-left: -50px;
 }
 
 .content-nav {
   position: absolute;
   top: 60%;
-  left: 50%;
+  left: 40%;
   transform: translate(-50%, -50%);
+  margin-top: 50px;
+  margin-left: 50px;
   display: flex;
   justify-content: start;
   align-items: flex-start;
@@ -226,7 +236,7 @@ h1 {
   align-items: center;
   overflow: hidden;
   position: relative;
-  position: absolute;
+  padding: 10px 20px;
   height: 50px;
   width: 200px;
   border-radius: 25px 25px 25px 25px;
@@ -258,3 +268,10 @@ h1 {
 .nav-item-about:hover h3 {
   transform: translateX(0);
 }
+
+
+@media screen and (max-width: 992px) {}
+
+@media screen and (max-width: 768px) {}
+
+@media screen and (max-width: 576px) {}
