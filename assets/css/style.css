@@ -177,7 +177,7 @@ header li:hover h2 {
 }
 
 .content-home img:hover {
-  width: 130%;
+  width: 110%;
   height: auto;
   border: 3px solid var(--yellow);
 }
