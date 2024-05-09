@@ -209,3 +209,52 @@ h1 {
   margin-top: 50px;
   margin-left: -50px;
 }
+
+.content-nav {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+}
+
+.nav-item-about {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  position: absolute;
+  height: 50px;
+  width: 200px;
+  border-radius: 25px 25px 25px 25px;
+}
+
+.nav-item-about:hover {
+  width: 200px;
+}
+
+.nav-item-about img {
+  width: 20%;
+  position: absolute;
+  right: 10%;
+  transition: transform 0.3s ease;
+}
+
+.nav-item-about:hover img {
+  transform: translateX(20px);
+}
+
+.nav-item-about h3 {
+  margin: 0;
+  position: absolute;
+  left: 20%;
+  transform: translateX(-20%);
+  transition: transform 0.3s ease;
+}
+
+.nav-item-about:hover h3 {
+  transform: translateX(0);
+}
