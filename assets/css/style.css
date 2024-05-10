@@ -272,10 +272,14 @@ h1 {
 
 
 @media (max-width: 992px) {
+  body {
+    flex-direction: column;
+  }
+
   .input-mobile-header {
     display: flex;
     flex-direction: row;
-    position: fixed;
+    position: relative;
     top: 0px;
     left: 0px;
     z-index: 1;
@@ -300,12 +304,12 @@ h1 {
   }
 
   .content-home {
-    width: 100%;
-    height: 700px;
-    position: absolute;
-    flex-direction: column;
-    align-items: center;
+    margin-right: auto;
     left: 0px;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     display: flex;
   }
 
@@ -355,9 +359,67 @@ h1 {
 @media screen and (max-width: 576px) {
   .content-home article {
     opacity: 0;
+    width: 0px;
+    height: 80px;
   }
 
   .content-nav {
-    top: 90%;
+    top: 80%;
   }
+
+  .content-home h1 {
+    font-size: 30px;
+  }
+
+  .content-home p {
+    font-size: 20px;
+  }
+}
+
+.projects-section {
+  min-height: 100vh;
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 10%;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+.project-item {
+  border: 5px solid var(--yellow);
+  margin: 10px;
+  list-style: none;
+  text-align: center;
+  max-width: 200px;
+  max-height: 200px;
+  overflow: hidden;
+}
+
+.project-link {
+  display: block;
+}
+
+.project-link img {
+  width: 100%;
+  height: auto;
+  max-width: 200px;
+  max-height: 200px;
+}
+
+.projects-section div {
+  margin-bottom: 20px;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.project-item:hover {
+  background-color: var(--blue);
+  transition: background-color 0.7s ease;
 }
