@@ -292,6 +292,7 @@ h2 {
   max-width: 200px;
   max-height: 200px;
   overflow: hidden;
+  transition: max-width 0.5s ease, max-height 0.5s ease;
 }
 
 .project-link {
@@ -303,6 +304,7 @@ h2 {
   height: auto;
   max-width: 200px;
   max-height: 200px;
+  transition: max-width 0.5s ease, max-height 0.5s ease;
 }
 
 .projects-section div {
@@ -317,6 +319,13 @@ h2 {
 .project-item:hover {
   background-color: var(--blue);
   transition: background-color 0.7s ease;
+  max-width: 250px;
+  max-height: 250px;
+}
+
+.project-item:hover img {
+  max-width: 250px;
+  max-height: 250px;
 }
 
 .contact-section {
