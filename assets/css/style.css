@@ -186,6 +186,7 @@ header li:hover h1 {
 
 .content-home div {
   width: 500px;
+  margin-left: 50px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -427,6 +428,10 @@ h2 {
     justify-content: center;
     align-items: center;
     display: flex;
+  }
+
+  .content-home div {
+    margin-left: 0px;
   }
 
   .content-home article {
