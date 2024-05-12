@@ -13,12 +13,9 @@
   --white: #fff;
   --gray: #6c757d;
   --gray-dark: #343a40;
-  --primary: #007bff;
   --secondary: #6c757d;
   --success: #28a745;
   --info: #17a2b8;
-  --warning: #ffc107;
-  --danger: #dc3545;
   --light: #f8f9fa;
   --dark: #17171b;
 }
@@ -58,6 +55,7 @@ body {
   z-index: 1;
 }
 
+/* Styles for the nav list */
 .nav-list {
   padding: 0;
   display: flex;
@@ -65,6 +63,7 @@ body {
   align-items: flex-end;
 }
 
+/* Styles for the navigation list item*/
 .nav-item {
   position: relative;
   color: var(--white);
@@ -89,7 +88,7 @@ body {
   margin-bottom: 10px;
 }
 
-
+/* Pseudo class hovering navigation */
 .nav-item:hover {
   width: 100px;
   height: 50px;
@@ -132,10 +131,12 @@ body {
   transition: opacity 0.3s ease;
 }
 
+/* Hide nav img when hovering */
 header li:hover img {
   opacity: 0;
 }
 
+/* Show name nav item */
 header li:hover h1 {
   opacity: 1;
 }
@@ -156,6 +157,7 @@ header li:hover h1 {
   align-items: flex-start;
 }
 
+/* Style article home */
 .content-home article {
   width: 40%;
   max-width: 300px;
@@ -380,7 +382,10 @@ h2 {
   background-color: var(--yellow);
 }
 
+/* Styles for responsiveness on different devices */
 @media (max-width: 992px) {
+
+  /* Styles for devices with screen width up to 992px */
   body {
     flex-direction: column;
   }
@@ -462,9 +467,10 @@ h2 {
   }
 }
 
-@media screen and (max-width: 768px) {}
 
 @media screen and (max-width: 576px) {
+
+  /* Styles for devices with screen width up to 576px */
   .content-home article {
     opacity: 0;
     width: 0px;
