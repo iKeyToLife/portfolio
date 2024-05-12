@@ -410,6 +410,27 @@ h2 {
   color: var(--gray);
 }
 
+#first-project {
+  max-width: 100%;
+  max-height: auto;
+  width: calc(100% - 20%);
+  height: auto;
+  transition: width 0.5s ease, height 0.5s ease;
+}
+
+#first-project img {
+  max-width: auto;
+  max-height: auto;
+  width: 100%;
+  height: auto;
+}
+
+#first-project:hover {
+  width: 100%;
+  height: 100%;
+}
+
+
 
 /* Styles for responsiveness on different devices */
 @media (max-width: 992px) {
@@ -423,10 +444,6 @@ h2 {
     width: 110%;
     border: 0px solid;
   }
-
-  /* .content-nav {
-    opacity: 0;
-  } */
 
   .input-mobile-header {
     display: flex;
