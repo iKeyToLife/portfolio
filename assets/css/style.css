@@ -391,6 +391,24 @@ h2 {
   background-color: var(--yellow);
 }
 
+.centered-section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.text-container {
+  max-width: 800px;
+}
+
+#text-about-me {
+  font-size: 30px;
+  color: var(--gray);
+}
 
 
 /* Styles for responsiveness on different devices */
@@ -489,6 +507,15 @@ h2 {
   .content-nav {
     top: 0px;
     left: 50%;
+  }
+
+  .centered-section {
+    margin-top: 30px;
+  }
+
+  #text-about-me {
+    font-size: 17px;
+    line-height: 1.7;
   }
 }
 
