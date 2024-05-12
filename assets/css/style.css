@@ -358,6 +358,7 @@ h2 {
 
 .contact-form textarea {
   height: 150px;
+  resize: vertical;
 }
 
 .contact-form button {
